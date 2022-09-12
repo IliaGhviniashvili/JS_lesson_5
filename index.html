@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel agency</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+
+
+<body>
+    <section>
+    <div class="top-bar">
+        <span><a href="tel:11 22 33"><i class="icon-phone icon-large"></i>Click To Call</a></span>
+      
+        <ul>
+            <li><a href="https://www.facebook.com"><i class="icon-facebook icon-large"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="icon-twitter icon-large"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="icon-instagram icon-large"></i></a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar">
+
+        <div class="logo">
+           <a href="#"> <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"
+            alt="logo">To The Moon</a>
+
+        </div>
+    
+        <ul class="menu" id="menuid">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <div class="menu-icon" id="iconid" onclick="myFunction(this)">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
+        </div>
+    </nav>
+    </section>
+
+    <section class="main-body">
+        
+            <form action="" class="formwrapper">
+                <p class="par">Add country you are planning to travel</p>
+                <input type="text" class="input-block" placeholder="Country">
+                <button class="add-country">Add-Country </button>
+
+            </form>
+
+            <ul class="ul-list"></ul>
+
+            <button class="delete-all-item">Delete All</button>
+
+
+        
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

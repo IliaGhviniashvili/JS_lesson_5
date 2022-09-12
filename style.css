@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* top bar */
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: rgb(255, 213, 74);
+    height: 40px;
+    
+}
+
+.top-bar span{
+    color: rgb(14, 8, 43);
+}
+.top-bar a{
+    color: rgb(14, 37, 9);
+    font-weight: 600;
+}
+.top-bar a:hover{
+    text-decoration: none;
+    color: rgb(51, 151, 31);
+}
+
+
+.top-bar ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.top-bar li{
+    margin: 0 8px;
+    
+    
+}
+/* icon color .................. */
+.icon-facebook{
+    color: blue;
+}
+.icon-twitter{
+    color: rgb(38, 126, 155);
+}
+.icon-instagram{
+    color: rgb(201, 62, 85);
+}
+.top-bar i:hover{
+    color: #fff;
+}
+/* .............................. */
+
+/* burger-bar.................... */
+.burger1, .burger2, .burger3{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 213, 74);
+    margin: 6px 0;
+    transition: 0.4s;
+    
+}
+.menu-icon{
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    
+}
+
+.change .burger1{
+    transform: translate(0, 11px) rotate(-45deg);
+    background-color: red;;
+ }
+ .change .burger2{
+    opacity: 0;
+ }
+ .change .burger3{
+    transform: translate(0, -11px) rotate(45deg);
+    background-color: red;
+ }
+
+
+/* ................................ */
+/* logo image */
+
+.navbar{
+    /* background-color: #222; */
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, white, #222);
+    height: 50px;
+    position: relative;
+    width: 100%;
+    
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.navbar a{
+    color: #fff;
+    
+}
+.navbar a:hover{
+    color: rgb(5, 5, 3);
+    text-decoration: none;
+}
+
+
+.logo{
+    flex: 1;
+    
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color:rgb(5, 5, 3)
+}
+.logo a:hover{
+    color: rgb(24, 14, 14);
+}
+.logo a:focus{
+    text-decoration: none;
+    color: rgb(24, 14, 14);
+}
+
+/* menu.................... */
+
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu li{
+    padding: 15px 10px;
+    font-size: 20px;
+    margin-top: 10px; ;
+    
+    
+}
+.menu li:hover{
+    background-color: rgb(194, 180, 180);
+}
+/* ...................... */
+
+/* navbar gradient */
+
+.navbar span{
+    height: 5px;
+    width: 2px;
+    color: red;
+}
+
+/* main body................ */
+
+.main-body{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.par {
+    font-size: 20px;
+    font-weight: 300;
+}
+.input-block{
+    margin-top: 10px;
+}
+
+/* media......................... */
+
+@media (max-width: 768px){
+    .menu {
+        display: none;
+        
+    }
+    .menu-icon{
+        position: relative;
+        margin-right: 10px;
+        display: block;
+        
+    }
+    .menu.active{
+        position: absolute;
+        display: block;
+        margin-top: 350px;
+        color: black;
+        width: 100vw;
+        background-color: rgb(255, 213, 74);
+        margin-right: 23px;
+        
+    }
+    .menu a{
+        color: black;
+    }
+    
+}
